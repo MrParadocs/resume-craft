@@ -1,0 +1,19 @@
+.auth-parent {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to bottom, #cce0ff, #a6c6ff);
+}
+
+.auth-parent form {
+  width: 400px;
+  padding: 20px;
+}
+.Form {
+  border: 1px solid #3b76ae;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(22, 22, 155, 0.1);
+  padding: 20px;
+  background: linear-gradient(to top, #cce0ff, #a6c6ff);
+}

@@ -1,0 +1,41 @@
+{
+  "name": "mern_resume_maker_backend",
+  "version": "1.0.0",
+  "description": "mern resume maker ",
+  "main": "server.js",
+  "scripts": {
+   "client-install": "npm install --prefix client",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix ../mern_resume_maker_frontend",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sumanthpweb11/mern_resume_maker_backend.git"
+  },
+  "keywords": [
+    "mern",
+    "resume",
+    "maker",
+    "express",
+    "reactjs",
+    "mongodb"
+  ],
+  "author": "paradocs",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sumanthpweb11/mern_resume_maker_backend/issues"
+  },
+  "homepage": "https://github.com/sumanthpweb11/mern_resume_maker_backend#readme",
+  "dependencies": {
+    "concurrently": "^7.6.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "mongoose": "^6.8.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}

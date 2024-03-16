@@ -1,0 +1,121 @@
+/* Layout */
+.layout {
+  height: 100vh;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 50px;
+  font-family: Arial, sans-serif;
+}
+
+/* Header */
+.header {
+  background: linear-gradient(to bottom, #cce0ff, #a6c6ff); /* Updated to pale blue gradient */
+  height: 10%;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  cursor: pointer;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+}
+
+.header button {
+  border: 2px solid rgb(79, 146, 177);
+  background: transparent;
+}
+
+.header button:hover {
+  background-color: #ffffff;
+  color: #ffffff;
+  transform: scale(1.05);
+}
+
+.header h2 {
+  font-size: 24px;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+}
+
+.header h2:hover {
+  color: #ffffff;
+}
+
+/* Content */
+.content {
+  height: 85%;
+  margin-top: 10px;
+  border-radius: 10px;
+  padding: 20px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  font-size: 18px;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+}
+
+/* Scroll Bar */
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #3defff;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #3d98ff;
+}
+
+/* Add background color to the body */
+body {
+  background: linear-gradient(to bottom, #f7f7f7, #cce0ff); /* Updated to complementary gradient */
+  margin: 0;
+  padding: 0;
+}
+
+/* Add animation to button hover */
+.button {
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Remove default focus outline on elements */
+button:focus,
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+}
+
+/* Add custom scrollbar for Firefox */
+.content {
+  scrollbar-width: thin;
+  scrollbar-color: #54b6d1 #f1f1f1;
+}
+
+.content::-webkit-scrollbar-thumb {
+  background-color: #3dc2ff;
+}
+
+.content::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
+
+.content::-webkit-scrollbar-corner {
+  background-color: #f1f1f1;
+}
